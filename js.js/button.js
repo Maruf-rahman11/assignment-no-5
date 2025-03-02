@@ -22,24 +22,26 @@ document.querySelectorAll(".complete-btn").forEach(button => {
 
 
 
-        const history = document.getElementById('history-box');
-        const currentDate = new Date().toLocaleTimeString("en-us",{
-            hour: "2-digit",
-            minute: "2-digit",
-            second: "2-digit",
-            hour12: true
-        })
+        // const history = document.getElementById('history-box');
+        // const currentDate = new Date().toLocaleTimeString("en-us",{
+        //     hour: "2-digit",
+        //     minute: "2-digit",
+        //     second: "2-digit",
+        //     hour12: true
+        // })
 
-        const p =document.createElement('p');
-        p.innerHTML=`
-        You have Complete The Task at ${currentDate}`
-        const time = document.getElementById('time')
-        history.append(p);
-        p.classList.add("mb-2","mt-2","p-2","text-xs","font-semibold","bg-gray-200","rounded-md")
+        // const p =document.createElement('p');
+        // p.innerHTML=`
+        // You have Complete The Task at ${currentDate}`
+        // const time = document.getElementById('time')
+        // history.append(p);
+        // p.classList.add("mb-2","mt-2","p-2","text-xs","font-semibold","bg-gray-200","rounded-md")
 
 
     });
 });
+
+ 
 
 
 document.getElementById('history-btn').addEventListener('click',function(event){
