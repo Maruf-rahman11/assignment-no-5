@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en"  class="h-screen">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <script src="https://kit.fontawesome.com/803f3ef79f.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+</head>
+<body id="body" class="bg-gray-200 min-h-screen text-[#00303C]">
+    <div class="w-[85%] mx-auto p-2">
+        <nav class="bg-white mt-3 p-3 rounded-xl flex justify-between items-center">
+            <div class="flex justify-between items-center">
+                <img src="assets/logo.png" alt="" srcset="">
+                <h1 class="text-2xl text-[#00303C]">Dev<span class="font-bold">Board</span></h1>
+            </div>
+            <div class="flex justify-between items-center ">
+               <div class="bg-gray-200 p-2 rounded-3xl flex justify-between items-center">
+                <i class="fa-solid fa-square-check text-[#3752FD]"></i>
+                <h1 id="given-task" class="font-bold text-xl pl-4">23</h1>
+               </div>
+                <button id="nav-btn" class="size-10 ml-5 bg-gray-200 p-2 rounded-full"><img src="assets/theme-btn.png" alt="" srcset=""></button>
+            </div>
+        </nav>
+
+        <section class=" mt-6  gap-4 grid grid-cols-10">
+            <!-- big left side -->
+            <div class="bg-white rounded-xl col-span-8 ">
+                <!-- top side -->
+                 <section class="grid grid-cols-4 p-5 gap-3 border-b-2 border-dashed border-gray-600 ">
+                    <!-- left part -->
+                    <div class="col-span-1 flex items-center justify-center gap-2 bg-gray-200 rounded-lg p-6">
+                        <i class="fa-solid fa-square-check text-[#3752FD] bg-white p-2 rounded-full"></i>
+                        <div class="pl-3">
+                            <h1 class="font-bold text-xs" >Task Assigned</h1>
+                            <h1 id="remain-task" class="font-bold text-xl">6</h1>
+                        </div>
+                    </div>
+                    <!-- middle part -->
+                     <div id="middle-btn" class="cursor-pointer col-span-2 flex items-center justify-center gap-3
+                     bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-lg">
+                        <img class="size-16" src="assets/board.png" alt="" srcset="">
+                        <h1 class="font-bold text-white">Discover Something <br>New Today!</h1>
+                     </div>
+                     <!-- right part -->
+                      <div class="col-span-1 flex items-center justify-center gap-3 bg-gray-200 rounded-lg ">
+                        <img class="bg-white p-2 rounded-xl" src="A5-Dev-Board/assets/calender.png" alt="" srcset="">
+                      <p id="date-display"></p>
+                      </div>
+                 </section>
+                 <!-- bottom grid -->
+                  <section class="m-5 rounded-lg grid grid-cols-3 grid-rows-2 gap-3">
+                    <div class="p-5  bg-gray-200 rounded-md ">
+                        <h1 class="bg-white rounded-md w-[90px] px-2 font-semibold">ShopEase</h1>
+                        <h1 class="py-3 font-semibold text-xl">Fix Mobile Button Issue</h1>
+                        <p class="bg-white rounded-md p-2 mb-3 ">Debug using elements, <br> and ensure </p>
+                        <div class="flex items-center justify-between border-t-2 border-dashed border-gray-600 pt-2 ">
+                          <h1>Deadline <br>
+                        <span class="font-semibold">21 March 2025</span></h1>
+                          <button class="complete-btn btn bg-[#3752FD] py-1 px-3 rounded-lg text-white ">Completed</button>
+                        </div>
+                    </div>
+                    <div class="p-5  bg-gray-200 rounded-md ">
+                        <h1 class="bg-white rounded-md w-[90px] px-2 font-semibold">CloudSync</h1>
+                        <h1 class="py-3 font-semibold text-xl">Add Dark Mode</h1>
+                        <p class="bg-white rounded-md p-2 mb-3 ">Debug using elements, <br> and ensure </p>
+                        <div class="flex items-center justify-between border-t-2 border-dashed border-gray-600 pt-2 ">
+                          <h1>Deadline <br>
+                        <span class="font-semibold">21 March 2025</span></h1>
+                          <button  class="complete-btn btn bg-[#3752FD] py-1 px-3 rounded-lg text-white ">Completed</button>
+                        </div>
+                    </div>
+                    <div class="p-5  bg-gray-200 rounded-md ">
+                        <h1 class="bg-white rounded-md w-[90px] px-2 font-semibold">SwiftPay</h1>
+                        <h1 class="py-3 font-semibold text-xl">Optimize  Home page</h1>
+                        <p class="bg-white rounded-md p-2 mb-3 ">Debug using elements, <br> and ensure </p>
+                        <div class="flex items-center justify-between border-t-2 border-dashed border-gray-600 pt-2 ">
+                          <h1>Deadline <br>
+                        <span class="font-semibold">21 March 2025</span></h1>
+                          <button class="complete-btn btn bg-[#3752FD] py-1 px-3 rounded-lg text-white ">Completed</button>
+                        </div>
+                    </div>
+                    <div class="p-5  bg-gray-200 rounded-md ">
+                        <h1 class="bg-white rounded-md w-[90px] px-2 font-semibold">Meta</h1>
+                        <h1 class="py-3 font-semibold text-xl">Add new emoji 🤲</h1>
+                        <p class="bg-white rounded-md p-2 mb-3 ">Debug using elements, <br> and ensure </p>
+                        <div class="flex items-center justify-between border-t-2 border-dashed border-gray-600 pt-2 ">
+                          <h1>Deadline <br>
+                        <span class="font-semibold">21 March 2025</span></h1>
+                          <button class="complete-btn btn bg-[#3752FD] py-1 px-3 rounded-lg text-white ">Completed</button>
+                        </div>
+                    </div>
+                    <div class="p-5  bg-gray-200 rounded-md ">
+                        <h1 class="bg-white rounded-md w-[100px] px-2 font-semibold">Google LLC</h1>
+                        <h1 class="py-3 font-semibold text-xl">Integrate OpenAI API </h1>
+                        <p class="bg-white rounded-md p-2 mb-3 ">Debug using elements, <br> and ensure </p>
+                        <div class="flex items-center justify-between border-t-2 border-dashed border-gray-600 pt-2 ">
+                          <h1>Deadline <br>
+                        <span class="font-semibold">21 March 2025</span></h1>
+                          <button class="complete-btn btn bg-[#3752FD] py-1 px-3 rounded-lg text-white ">Completed</button>
+                        </div>
+                    </div>
+                    <div class="p-5  bg-gray-200 rounded-md ">
+                        <h1 class="bg-white rounded-md w-[90px] px-2 font-semibold">Glassdoar</h1>
+                        <h1 class="py-3 font-semibold text-xl">Improve Job searching </h1>
+                        <p class="bg-white rounded-md p-2 mb-3 ">Debug using elements, <br> and ensure </p>
+                        <div class="flex items-center justify-between border-t-2 border-dashed border-gray-600 pt-2 ">
+                          <h1>Deadline <br>
+                        <span class="font-semibold">21 March 2025</span></h1>
+                          <button class="complete-btn btn bg-[#3752FD] py-1 px-3 rounded-lg text-white ">Completed</button>
+                        </div>
+                    </div>
+                   
+                   
+                  </section>
+            </div>
+            <!-- small right side -->
+            <div  class="bg-white rounded-xl col-span-2 text-center">
+                <div class="">
+                    <div class="flex items-center justify-center mt-3 pt-2 gap-3 ">
+                        <i class="fa-regular fa-clock"></i>
+                        <h1 class="font-bold">Activity Log</h1>
+                    </div>
+                    <button id="history-btn"  class="btn bg-[#3752FD] mt-2 py-1 px-3 rounded-lg text-white ">Clear History</button>
+                </div>
+                <div id="history-box" class="text-left mt-10 px-4">
+                 
+
+                </div>
+            </div>
+        </section>
+    
+    
+    
+    </div>
+    <script src="js.js/button.js"></script>
+    <script src="js.js/utilities.js"></script>
+    <script src="js.js/dateandtime.js"></script>
+    <script src="js.js/nav-btn.js"></script>
+</body>
+</html>
